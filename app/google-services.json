@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "414119673769",
+    "project_id": "mincetur-app",
+    "storage_bucket": "mincetur-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414119673769:android:3683840b84b5b0deb6ceb8",
+        "android_client_info": {
+          "package_name": "com.example.aplicacionminceturcl3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414119673769-khq6n93ib1uiv23r81aiiaiqgq3l8hj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDl9z91kEjscW3Isq7F5_9E01hQFAFTe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414119673769-khq6n93ib1uiv23r81aiiaiqgq3l8hj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
