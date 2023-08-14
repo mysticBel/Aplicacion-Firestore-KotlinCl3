@@ -34,16 +34,19 @@ class MainAdapter(var items: MutableList<RestauranteModel>, var iCardRestaurante
         return ViewHolder(view)
     }
 
+    override fun getItemCount(): Int {
+        return items.size
+    }
+
     override fun onBindViewHolder(holder: MainAdapter.ViewHolder, position: Int) {
+
         val item = items[position]
         holder.tvNombre.text = item.nombre
         holder.tvDescripcion.text= item.descripcion
         Glide.with(holder.itemView.context).load(item.imagen).into(holder.imagen)
+        println(item.imagen)
     }
 
-    override fun getItemCount(): Int {
-        return items.size
-    }
 
     fun update(newItems : List<RestauranteModel>){
         this.items.clear()
