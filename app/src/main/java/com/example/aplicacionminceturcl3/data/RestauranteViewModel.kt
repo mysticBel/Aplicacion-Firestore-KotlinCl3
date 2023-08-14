@@ -25,8 +25,8 @@ class RestauranteViewModel: ViewModel() {
             .addOnSuccessListener { documentList ->
                 for (document in documentList){
                     val descripcion = document.getString("descripcion")
-                    val imagen = document.getString("imagen")
                     val geopoint = document.getGeoPoint("geopoint")
+                    val imagen = document.getString("imagen")
                     val nombre = document.getString("nombre")
 
                     var restaurante = RestauranteModel(
@@ -34,6 +34,7 @@ class RestauranteViewModel: ViewModel() {
                         geopoint!!,
                         imagen!!,
                         nombre!!)
+
                     listRestaurantes.add(restaurante)
                 }
                 _getList.postValue(listRestaurantes)
